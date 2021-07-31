@@ -1,9 +1,9 @@
 {
   "name": "typescript-back-template",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "typeorm": "ts-node ./node_modules/typeorm/cli",
     "test": "NODE_ENV=test npx jest -i",
     "build": "NODE_ENV=production npx tsc --outDir dist",
     "start": "NODE_ENV=production NODE_TLS_REJECT_UNAUTHORIZED=0 node dist/server.js",
@@ -33,5 +33,17 @@
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.34"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelib/back-repo-provas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafaelib/back-repo-provas/issues"
+  },
+  "homepage": "https://github.com/rafaelib/back-repo-provas#readme",
+  "description": ""
 }
