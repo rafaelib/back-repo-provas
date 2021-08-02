@@ -15,13 +15,13 @@ export default class Exam {
   link: string;
 
   @Column()
-  TeacherId: number;
+  teacherId: Number;
 
   @Column()
-  categoryId: number;
+  subjectId: Number;
 
   @Column()
-  SubjectId: number;
+  categoryId: Number;
 
   @ManyToOne(() => Subject, (subject) => subject.exams)
   subject: Subject;
